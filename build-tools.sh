@@ -6,11 +6,8 @@ if [ -z "$DOTNET_VERSION" ]; then
   DOTNET_VERSION=2.1.505
 fi
 
-# Update the apt cache
-apt-get update
-
-# Install curl, nodejs, and npm
-apt-get install -y curl nodejs npm
+# Install nodejs and npm
+apt-get install -y nodejs npm
 
 # Install gulp
 npm install -g gulp
