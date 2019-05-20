@@ -16,5 +16,4 @@ npm install -g gulp
 curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -c Current -v $DOTNET_VERSION
 
 # Link the dotnet binary to /usr/bin/dotnet
-unlink /usr/bin/dotnet
 ln -s $HOME/.dotnet/dotnet /usr/bin/dotnet
