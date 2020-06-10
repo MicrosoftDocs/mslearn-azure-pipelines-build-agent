@@ -15,9 +15,8 @@ apt-get install -y nodejs npm jq
 # Install gulp
 npm install -g gulp
 
-# Change ownership of npm directories to the sudo (non-root) user
+# Change ownership of the .npm directory to the sudo (non-root) user
 chown -R $SUDO_USER ~/.npm
-chown -R $SUDO_USER ~/.config
 
 # Install .NET as the sudo (non-root) user
 sudo -i -u $SUDO_USER bash << EOF
